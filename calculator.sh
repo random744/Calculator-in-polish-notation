@@ -19,9 +19,9 @@ calculate() {
 }
 
 while true; do
-    read -p "What is your calculation? (e.g. 7 3 +, -, x, / or 'q' to finish): " num1 num2 operator
+    read -p "What is your calculation? (e.g. 7 3 +, -, x, / or 'x' to finish): " num1 num2 operator
 
-    if [[ $num1 = "q" || $num2 = "q" || $operator = "q" ]]; then
+    if [[ $num1 = "x" || $num2 = "x" || $operator = "x" ]]; then
         echo "Script is terminated..."
         break
     fi
